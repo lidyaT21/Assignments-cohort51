@@ -39,6 +39,7 @@ describe('js-wk3-ex3-lemonAllergy', () => {
   test('sanitizeFruitBasket should not modify the original `fruitBasket` array', () => {
     // Save the original contents of the fruit basket
     const originalFruitBasketContents = [...fruitBasket];
+    sanitizeFruitBasket(fruitBasket, 'lemon');
     expect(fruitBasket).toStrictEqual(originalFruitBasketContents);
   });
 

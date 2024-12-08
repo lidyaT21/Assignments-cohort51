@@ -19,7 +19,7 @@ export function createObservable() {
       subscribers.push(subscriber);
     },
     notify(message) {
-      subscribers.forEach((element) => element(message));
+      subscribers.forEach((subscriber) => subscriber(message));
     },
   };
 }
