@@ -40,9 +40,6 @@ function catWalk() {
     setTimeout(() => {
       catImage.src = walkingCatImageUrl;
       catWalkInterval = setInterval(catWalk, 50);
-      console.log('newPosition', newPosition);
-      console.log('middle', middle);
-      console.log('catImage.offsetWidth', catImage.offsetWidth);
     }, 5000);
   }
   catImage.style.left = `${newPosition}px`;

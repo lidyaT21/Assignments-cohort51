@@ -9,12 +9,12 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 ------------------------------------------------------------------------------*/
 
 const nickName = document.getElementById('nickname');
-const favoruiteFood = document.getElementById('fav-food');
+const food = document.getElementById('fav-food');
 const homeTown = document.getElementById('hometown');
 const li = document.querySelectorAll('li');
 
-nickName.textContent = 'Lidu';
-favoruiteFood.textContent = 'injera';
+nickName.textContent = 'Lidya';
+food.textContent = 'Pasta';
 homeTown.textContent = 'Ethiopia';
 
 li.forEach((list) => (list.className = 'list-item'));
