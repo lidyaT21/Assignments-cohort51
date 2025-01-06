@@ -8,4 +8,13 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+const nickName = document.getElementById('nickname');
+const favoruiteFood = document.getElementById('fav-food');
+const homeTown = document.getElementById('hometown');
+const li = document.querySelectorAll('li');
+
+nickName.textContent = 'Lidu';
+favoruiteFood.textContent = 'injera';
+homeTown.textContent = 'Ethiopia';
+
+li.forEach((list) => (list.className = 'list-item'));
