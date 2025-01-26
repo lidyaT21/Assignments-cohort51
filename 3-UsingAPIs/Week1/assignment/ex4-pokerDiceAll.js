@@ -27,9 +27,8 @@ exercise file.
 import { rollDie } from '../../helpers/pokerDiceRoller.js';
 
 export function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return Promise.all(dice.map((die) => rollDie(die)));
 }
 
 function main() {
@@ -43,4 +42,6 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 
-// TODO Replace this comment by your explanation that was asked for in the assignment description.
+/*
+When one of the promises is rejected, the other dice keep rolling. This happens
+because the `setTimeout` function is still working. */
